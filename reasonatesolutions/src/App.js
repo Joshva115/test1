@@ -21,30 +21,23 @@ function App() {
         <Table striped bordered hover variant="dark">
           <thead>
             <tr>
-              <th>id</th>
               <th>Name</th>
-              <th>Username</th>
-              <th>Email</th>
+              <th>Email Address</th>
+              <th>Address</th>
+              <th>Phone Number</th>
+              <th>Company</th>
             </tr>
           </thead>
           <tbody>
-            <tr>
-              <td>1</td>
-              <td>Mark</td>
-              <td>Otto</td>
-              <td>@mdo</td>
-            </tr>
-            <tr>
-              <td>2</td>
-              <td>Jacob</td>
-              <td>Thornton</td>
-              <td>@fat</td>
-            </tr>
-            <tr>
-              <td>3</td>
-              <td colSpan={2}>Larry the Bird</td>
-              <td>@twitter</td>
-            </tr>
+            {users.map((user) => (
+              <tr key={user.id}>
+                <th>{user.name}</th>
+                <th>{user.email}</th>
+                <th>{user.address.street}</th>
+                <th>{user.phone}</th>
+                <th>{user.company.name}</th>
+              </tr>
+            ))}
           </tbody>
         </Table>
       </Container>
