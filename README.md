@@ -12,7 +12,7 @@ Provide how to run the code.
 
 # Run code
 
-Unzip the ReasonateSolutions-main folder, with Visual Studio select the folder by using Open Folder and use the 'ReasonateSolutions-main/reasonatesolutions' 
+Unzip the ReasonateSolutions-main folder, with Visual Studio select the folder by using Open Folder and use the 'Test1-main/' 
 
 run 'npm install' to install the node_modules onto your computer (This may take a minute or two).
 
