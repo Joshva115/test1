@@ -1,9 +1,10 @@
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-import Table from "react-bootstrap/Table";
-import Container from "react-bootstrap/Container";
 import React, { useEffect, useState } from "react";
-
+import Header from "./components/header";
+import Container from "react-bootstrap/Container";
+import Table from "react-bootstrap/Table";
+import Footer from "./components/footer";
 function App() {
   const [users, setUser] = useState([]);
 
@@ -17,7 +18,9 @@ function App() {
   }, [setUser]);
   return (
     <div className="App">
+      <Header />
       <Container>
+        <h3 class="text-left display-5 pt-4 pb-3">Contacts</h3>
         <Table striped bordered hover variant="dark">
           <thead>
             <tr>
@@ -41,6 +44,7 @@ function App() {
           </tbody>
         </Table>
       </Container>
+      <Footer />
     </div>
   );
 }
