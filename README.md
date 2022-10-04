@@ -16,4 +16,4 @@ Unzip the ReasonateSolutions-main folder, with Visual Studio select the folder b
 
 run 'npm install' to install the node_modules onto your computer (This may take a minute or two).
 
-Once completed you should be able to run 'npm start' to view the application in the browser. The link should be www.localhost.com/Reasonatesolutions
+Once completed you should be able to run 'npm start' to view the application in the browser. The link should be www.localhost.com/ReasonateSolutions
